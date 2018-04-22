@@ -1,0 +1,252 @@
+{
+  "contractName": "PlanetFleet",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "name": "planetByPosition",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "planetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "NewPlanet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60806040526060604051908101604052806101f461ffff1681526020016101f461ffff168152602001600061ffff168152506001906003610041929190610087565b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061015b565b8260036007016008900481019282156101175791602002820160005b838211156100e557835183826101000a81548163ffffffff021916908361ffff16021790555092602001926004016020816003010492830192600103026100a3565b80156101155782816101000a81549063ffffffff02191690556004016020816003010492830192600103026100e5565b505b5090506101249190610128565b5090565b61015891905b8082111561015457600081816101000a81549063ffffffff02191690555060010161012e565b5090565b90565b6103128061016a6000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632f11871a1461005c5780638da5cb5b146100af578063f2fde38b14610106575b600080fd5b34801561006857600080fd5b5061008d600480360381019080803563ffffffff169060200190929190505050610149565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b3480156100bb57600080fd5b506100c461016c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011257600080fd5b50610147600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610191565b005b60036020528060005260406000206000915054906101000a900463ffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101ec57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561022857600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820e5afbe0ddbbdd9115e55fe7ee0cb7747fee82cb5f5b41917d9e764fbffb329530029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632f11871a1461005c5780638da5cb5b146100af578063f2fde38b14610106575b600080fd5b34801561006857600080fd5b5061008d600480360381019080803563ffffffff169060200190929190505050610149565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b3480156100bb57600080fd5b506100c461016c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011257600080fd5b50610147600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610191565b005b60036020528060005260406000206000915054906101000a900463ffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101ec57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561022857600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820e5afbe0ddbbdd9115e55fe7ee0cb7747fee82cb5f5b41917d9e764fbffb329530029",
+  "sourceMap": "59:44:5:-;;;1008:52:4;;;;;;;;;1048:3;1008:52;;;;;;1053:3;1008:52;;;;;;1058:1;1008:52;;;;;;;;;;;;;:::i;:::-;;509:10:11;501:5;;:18;;;;;;;;;;;;;;;;;;59:44:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "59:44:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1589:50:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1589:50:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;238:20:11;;8:9:-1;5:2;;;30:1;27;20:12;5:2;238:20:11;;;;;;;;;;;;;;;;;;;;;;;;;;;832:174;;8:9:-1;5:2;;;30:1;27;20:12;5:2;832:174:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;1589:50:4;;;;;;;;;;;;;;;;;;;;;;:::o;238:20:11:-;;;;;;;;;;;;;:::o;832:174::-;653:5;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;928:1;908:22;;:8;:22;;;;900:31;;;;;;;;970:8;942:37;;963:5;;;;;;;;;;;942:37;;;;;;;;;;;;993:8;985:5;;:16;;;;;;;;;;;;;;;;;;832:174;:::o",
+  "source": "pragma solidity ^0.4.21;\n\nimport \"./planetbuildings.sol\";\n\ncontract PlanetFleet is PlanetBuildings {\n\n}\n",
+  "sourcePath": "/home/alemoreau/Projects/Dapps/CryptoPlanets/contracts/planetfleet.sol",
+  "ast": {
+    "absolutePath": "/home/alemoreau/Projects/Dapps/CryptoPlanets/contracts/planetfleet.sol",
+    "exportedSymbols": {
+      "PlanetFleet": [
+        1175
+      ]
+    },
+    "id": 1176,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1171,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/home/alemoreau/Projects/Dapps/CryptoPlanets/contracts/planetbuildings.sol",
+        "file": "./planetbuildings.sol",
+        "id": 1172,
+        "nodeType": "ImportDirective",
+        "scope": 1176,
+        "sourceUnit": 507,
+        "src": "26:31:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1173,
+              "name": "PlanetBuildings",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 506,
+              "src": "83:15:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PlanetBuildings_$506",
+                "typeString": "contract PlanetBuildings"
+              }
+            },
+            "id": 1174,
+            "nodeType": "InheritanceSpecifier",
+            "src": "83:15:5"
+          }
+        ],
+        "contractDependencies": [
+          506,
+          1169,
+          2171,
+          2415
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1175,
+        "linearizedBaseContracts": [
+          1175,
+          506,
+          2171,
+          1169,
+          2415
+        ],
+        "name": "PlanetFleet",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1176,
+        "src": "59:44:5"
+      }
+    ],
+    "src": "0:104:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/alemoreau/Projects/Dapps/CryptoPlanets/contracts/planetfleet.sol",
+    "exportedSymbols": {
+      "PlanetFleet": [
+        1175
+      ]
+    },
+    "id": 1176,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1171,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/home/alemoreau/Projects/Dapps/CryptoPlanets/contracts/planetbuildings.sol",
+        "file": "./planetbuildings.sol",
+        "id": 1172,
+        "nodeType": "ImportDirective",
+        "scope": 1176,
+        "sourceUnit": 507,
+        "src": "26:31:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1173,
+              "name": "PlanetBuildings",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 506,
+              "src": "83:15:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PlanetBuildings_$506",
+                "typeString": "contract PlanetBuildings"
+              }
+            },
+            "id": 1174,
+            "nodeType": "InheritanceSpecifier",
+            "src": "83:15:5"
+          }
+        ],
+        "contractDependencies": [
+          506,
+          1169,
+          2171,
+          2415
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1175,
+        "linearizedBaseContracts": [
+          1175,
+          506,
+          2171,
+          1169,
+          2415
+        ],
+        "name": "PlanetFleet",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1176,
+        "src": "59:44:5"
+      }
+    ],
+    "src": "0:104:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-04-22T03:18:11.458Z"
+}

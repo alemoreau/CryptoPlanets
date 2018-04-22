@@ -1,0 +1,38 @@
+{
+  "name": "cryptoplanets",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "Alexandre Moreau <alemoreau.fr@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "@xkeshi/vue-countdown": "^0.6.0",
+    "e": "0.0.4",
+    "ethjs": "^0.3.6",
+    "vue": "^2.5.3",
+    "vue-moment": "^3.2.0",
+    "vue-router": "^3.0.1",
+    "vuetify": "^1.0.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "json-loader": "^0.5.7",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.5.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
